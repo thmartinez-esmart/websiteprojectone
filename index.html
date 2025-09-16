@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobPath</title>
+  <link rel="stylesheet" href="Css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Navegacion -->
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="index.html" class="logo-enlace">
+      <img src="Images/logo.png" alt="" class="logo">
+    </a>
+
+    <ul>
+      <li><a href="#index">Inicio</a></li>
+      <li><a href="#acordeon">¿Qué es JobPath?</a></li>
+      <li><a href="#banner">Beneficios</a></li>
+      <li><a href="#galeria">Equipo</a></li>
+      <li><a href="#formulario">Test Vocacional</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- Carrusel -->
+    <div class="carrusel" id="index">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/pexels-cristian-rojas-7616800.jpg" class="d-block w-100" alt="Orientación profesional">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/pexels-peter-olexa-2214257-4012966.jpg" class="d-block w-100" alt="Descubre tu vocación">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/pexels-yankrukov-8837370.jpg" class="d-block w-100" alt="Construye tu futuro">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+    <!-- Acordeon -->
+
+    <div class="container-1" id="acordeon">
+      <div class="container-text">
+        <h1>JobPath</h1>
+        <p><b>Descubre tu camino profesional con JobPath</b> <br>
+          ¿No sabes qué carrera o trabajo elegir? Con nuestros test interactivos podrás conocer tus fortalezas,
+          intereses y habilidades, y descubrir en qué áreas profesionales puedes destacar.
+          👉 Empieza hoy mismo y encuentra la ruta hacia tu futuro.
+        </p>
+      </div>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              ¿Qué es JobPath?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>JobPath</strong> es una plataforma diseñada para ayudarte a descubrir tu vocación profesional. A través de test vocacionales y recursos personalizados, te orientamos para que tomes decisiones informadas sobre tu futuro académico y laboral.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              ¿Cómo funciona el test vocacional?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Nuestro test vocacional analiza tus intereses, habilidades y valores personales. Al finalizar, recibirás recomendaciones de carreras y áreas profesionales que mejor se adaptan a tu perfil, junto con información relevante para cada opción.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              ¿Por qué elegir JobPath?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              En JobPath te ofrecemos orientación personalizada, recursos actualizados y acompañamiento en cada etapa de tu desarrollo profesional. Nuestro objetivo es que encuentres el camino que te motive y te lleve al éxito.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banners -->
+     <div class="banner" id="banner">
+        <h2>Beneficios de usar JobPath</h2>
+        <ul style="text-align:left; max-width:600px; margin:0 auto;">
+          <li>✔️ Descubre tus fortalezas y habilidades.</li>
+          <li>✔️ Recibe recomendaciones de carreras personalizadas.</li>
+          <li>✔️ Accede a recursos y consejos para tu desarrollo profesional.</li>
+          <li>✔️ Plataforma fácil de usar y totalmente gratuita.</li>
+        </ul>
+        <img src="Images/freepik_assistant_1757892267727.png" class="img-fluid" alt="Beneficios JobPath">
+     </div>
+    <!-- Galeria de Imagenes -->
+    <div class="main-Nosotros" id="galeria">
+      <div class="contenedor-Nosotros">
+        <h1 class="titulos">Nuestro equipo</h1>
+        <div class="contenedor-N2">
+          <div class="contenedorN-hijo">
+            <div class="img-Nosotros">
+              <img src="Images/trabajo.webp" alt="Miembro del equipo 1">
+            </div>
+            <p class="nombre-N">Imagen 1</p>
+          </div>
+
+          <div class="contenedorN-hijo">
+            <div class="img-Nosotros">
+              <img src="Images/img2.jpg" alt="Miembro del equipo 2">
+            </div>
+            <p class="nombre-N">Imagen 2</p>
+          </div>
+
+          <div class="contenedorN-hijo">
+            <div class="img-Nosotros">
+              <img src="Images/img3.jpg" alt="Miembro del equipo 3">
+            </div>
+            <p class="nombre-N">Imagen 3</p>
+          </div>
+
+          <div class="contenedorN-hijo">
+            <div class="img-Nosotros">
+              <img src="Images/img4.jpg" alt="Miembro del equipo 4">
+            </div>
+            <p class="nombre-N">Imagen 4</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <div class="forms" id="formulario">
+      <h2>Test Vocacional</h2>
+      <p>Completa el formulario para iniciar el test vocacional y recibir orientación personalizada.</p>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="luismiguel@gmail.com">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="********">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Nombres</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Luis Miguel">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Martínez López">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad de Residencia</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="Popayán">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Género</label>
+          <select id="inputState" class="form-select">
+            <option selected>Seleccionar...</option>
+            <option>Hombre Hombre</option>
+            <option>Hombre</option>
+            <option>Mujer Mujer</option>
+            <option>Mujer</option>
+            <option>Mujer Hombre</option>
+            <option>Transformer</option>
+            <option>No lo quiero decir</option>
+            <option>Soy Sibo</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Edad</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" onchange="habilitarBoton()">
+            <label class="form-check-label" for="gridCheck">
+              Acepto enviar mi información para recibir orientación vocacional
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" id="btnTest" onclick="generarPDF()" disabled>Iniciar Test</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- seccion footer -->
+  <footer>
+    <div class="footer-Contenedor">
+      <div class="footer-Info">
+        <h2>JobPath</h2><br>
+        <p>Tu guía para descubrir tu vocación y construir tu futuro profesional.</p>
+      </div>
+      <div class="footer-Servicios">
+        <h2>Enlaces útiles</h2> <br>
+        <li><a href="#index">Inicio</a></li><br>
+        <li><a href="#acordeon">¿Qué es JobPath?</a></li><br>
+        <li><a href="#banner">Beneficios</a></li><br>
+        <li><a href="#galeria">Equipo</a></li>
+      </div>
+      <div class="footer-Contactos">
+        <h2>Contacto</h2><br>
+        <li><a href="mailto:contacto@jobpath.com" target="_blank"><i class="fa-solid fa-envelope"></i> contacto@jobpath.com</a></li><br>
+        <li><i class="fa-solid fa-phone"></i> +57 300 000 0000</li><br>
+        <li><a href="https://maps.app.goo.gl/wUofoGHpg27QeCdbA" target="_blank"><i class="fa-solid fa-location-dot"></i> Popayán, Colombia</a></li>
+      </div>
+      <div class="footer-Follows">
+        <h2>Síguenos en:</h2><br>
+        <li><a href="https://facebook.com/jobpath" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li><br>
+        <li><a href="https://instagram.com/jobpath" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li><br>
+        <li><a href="https://twitter.com/jobpath" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+      </div>
+    </div>
+    <p class="Copyright">Copyright &copy; JobPath. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+
+<script>
+function habilitarBoton() {
+  document.getElementById('btnTest').disabled = !document.getElementById('gridCheck').checked;
+}
+</script>
+</html>
