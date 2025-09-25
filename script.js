@@ -24,6 +24,14 @@ function generarPDF() {
     pdf.setFontSize(18);
     pdf.text("Datos del formulario JobPath", pdf.internal.pageSize.getWidth() / 2, 20, { align: "center" });
 
+    // Datos alineados a la derecha
+    pdf.setFontSize(12);
+    var startY = 40;
+    var marginRight = pdf.internal.pageSize.getWidth() - 10;
+    for (var i = 0; i < datos.length; i++) {
+        pdf.text(datos[i], startY + i * 10);
+    }
+
     // Mensaje final centrado
     pdf.setFontSize(11);
     pdf.setTextColor(100);
